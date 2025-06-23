@@ -11,9 +11,11 @@ import "@rainbow-me/rainbowkit/styles.css";
 
 
 export function Providers(props: {children: ReactNode}) {
-    const [queryClient] = useState(() => new QueryClient());
+
+ // Create a single QueryClient instance for React Query
+ const [queryClient] = useState(() => new QueryClient()); 
     return (
-        <WagmiProvider config = {config}>
+        <WagmiProvider config = {config}> 
             <QueryClientProvider client={queryClient}>
                 <RainbowKitProvider>    
                 {props.children}
@@ -22,3 +24,6 @@ export function Providers(props: {children: ReactNode}) {
         </WagmiProvider>
     );
 }   
+
+// 02 - This file sets up the providers needed for the application, including
+//  Wagmi for Ethereum interactions and TanStack Query for data fetching.

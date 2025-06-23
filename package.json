@@ -22,6 +22,8 @@
     "wagmi": "^2.15.6"
   },
   "devDependencies": {
+    "@playwright/test": "^1.53.1",
+    "@synthetixio/synpress": "^4.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

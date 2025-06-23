@@ -1,4 +1,5 @@
-export interface InputFormProps {
+
+export interface InputFormProps { // 
     label: string
     placeholder: string
     value?: string
@@ -14,7 +15,7 @@ export default function InputField({
       type,
        large,
         onChange,
-     }: InputFormProps) {
+     }: InputFormProps) { 
     return (
         <div className="flex flex-col gap-1.5">
             <label className="text-zinc-600 font-medium text-sm">{label}</label>
@@ -37,3 +38,6 @@ export default function InputField({
         </div>
     )
 }
+
+// 05 - This file defines a reusable input field component that can be used in forms.
+// It supports both input and textarea elements, depending on the `large` prop.
